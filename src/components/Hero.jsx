@@ -66,7 +66,25 @@ const Hero = ({ data }) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Developer3D />
+          {data.personalInfo.profileImage ? (
+            <div className="profile-image-container">
+              <motion.div
+                className="profile-image-wrapper"
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <img 
+                  src={data.personalInfo.profileImage} 
+                  alt={data.personalInfo.name}
+                  className="profile-image"
+                />
+                <div className="profile-image-glow"></div>
+              </motion.div>
+            </div>
+          ) : (
+            <Developer3D />
+          )}
         </motion.div>
       </div>
     </section>
