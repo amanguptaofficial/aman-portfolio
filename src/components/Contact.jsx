@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaCheckCircle, FaSpinner } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter, FaCheckCircle, FaSpinner, FaMobileAlt } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
 import './Contact.css'
 
@@ -118,6 +118,13 @@ const Contact = ({ data }) => {
               <div>
                 <h3>Email</h3>
                 <a href={`mailto:${data.personalInfo.email}`}>{data.personalInfo.email}</a>
+              </div>
+            </div>
+            <div className="contact-item">
+              <FaMobileAlt className="contact-icon" />
+              <div>
+                <h3>Mobile</h3>
+                <a href={`tel:${data.personalInfo.phone}`}>{data.personalInfo.phone}</a>
               </div>
             </div>
             <div className="contact-item">
