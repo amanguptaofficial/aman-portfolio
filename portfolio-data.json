@@ -1,0 +1,160 @@
+{
+    "personalInfo": {
+        "name": "AMAN GUPTA",
+        "title": "BACKEND DEVELOPER",
+        "experience": "1.5 Years",
+        "location": "GURUGRAM, HARYANA, INDIA",
+        "email": "amangupta5132@gmail.com",
+        "phone": "+91 7525051783",
+        "linkedin": "https://www.linkedin.com/in/aman-gupta-coder/",
+        "github": "https://github.com/amanguptaofficial",
+        "website": "https://asbackendinstitute.com"
+    },
+    "about": {
+        "description": "Hey there! I'm a 🚀 Backend Developer passionate about building robust and scalable server-side applications. Proficient in Node.js, Express.js, Nest.js, and Spring Boot with expertise in MongoDB, PostgreSQL, and MySQL. Currently working as a Software Developer at Antino Labs, crafting efficient APIs and database solutions. Let's build powerful backend systems together! 🌐 ✨",
+        "bio": "I'm a dedicated Backend Developer with 1.5 years of professional experience specializing in building scalable server-side applications. My expertise spans across JavaScript/TypeScript ecosystem (Node.js, Express.js, Nest.js) and Java-based frameworks (Spring Boot). I excel in designing RESTful APIs, implementing secure authentication systems, optimizing database performance, and deploying applications on cloud platforms like AWS, Heroku, and Vercel. Passionate about writing clean, maintainable code and solving complex technical challenges."
+    },
+    "skills": {
+        "languages": [
+            "Java (Core)",
+            "JavaScript",
+            "TypeScript"
+        ],
+        "frameworks": [
+            "Node.js",
+            "Express.js",
+            "Nest.js",
+            "Spring Boot",
+            "GraphQL",
+            "React.js"
+        ],
+        "databases": [
+            "MongoDB",
+            "PostgreSQL",
+            "MySQL",
+            "Redis"
+        ],
+        "tools": [
+            "Git",
+            "Docker",
+            "Postman",
+            "VS Code",
+            "BullMQ"
+        ],
+        "integrations": [
+            "Socket.io",
+            "Stripe",
+            "Firebase",
+            "Google OAuth",
+            "Google Maps API",
+            "OpenAI ChatGPT",
+            "Mistral AI",
+            "Pixtral"
+        ],
+        "cloud": [
+            "AWS",
+            "AWS S3",
+            "Google Cloud Platform (GCP)",
+            "Google Cloud Storage",
+            "Vercel"
+        ]
+    },
+    "experience": [
+        {
+            "title": "Software Developer",
+            "company": "Antino Labs, Gurugram",
+            "duration": "Aug 2024 - Present",
+            "description": [
+                "Developed and maintained scalable RESTful APIs using Node.js, Express.js, and Nest.js frameworks",
+                "Designed and implemented efficient database schemas for MongoDB and PostgreSQL, ensuring data integrity and optimal performance",
+                "Optimized database queries and API endpoints, resulting in significant performance improvements and reduced response times",
+                "Successfully delivered 4 production-ready projects and currently working on an AI-based project with advanced third-party integrations",
+                "Integrated multiple third-party APIs including AI services (OpenAI ChatGPT, Mistral AI, Pixtral) for intelligent features and content generation",
+                "Implemented real-time microservices architecture with Socket.io for seamless bidirectional communication and live updates",
+                "Designed and implemented job queue systems using BullMQ for handling asynchronous tasks, background processing, and scheduled operations",
+                "Integrated Stripe payment gateway for secure payment processing with support for multiple payment methods and subscription management",
+                "Implemented Firebase Cloud Messaging (FCM) for push notifications, enabling real-time user engagement and updates",
+                "Integrated Google OAuth 2.0 API for secure and seamless user authentication, enhancing user experience and security",
+                "Implemented Google Maps API for location-based services, including nearby places search and geolocation features"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "E-Commerce API",
+            "description": "A comprehensive and scalable RESTful API for an e-commerce platform built with Node.js and Express.js. Features include secure user authentication with JWT, role-based access control, product catalog management with advanced filtering and search, shopping cart functionality, order processing with payment integration, inventory management, and admin dashboard APIs. Implemented with MongoDB for flexible data storage, includes input validation, error handling, and comprehensive API documentation.",
+            "technologies": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "JWT",
+                "REST APIs"
+            ],
+            "github": "https://github.com/amanguptaofficial",
+            "live": "",
+            "image": "https://img.freepik.com/free-photo/black-friday-sales-sign-neon-light_23-2151833076.jpg?semt=ais_hybrid&w=740&q=80"
+        },
+        {
+            "title": "Book Management System",
+            "description": "A robust backend API for a comprehensive book management system with advanced features. Includes user authentication and authorization, CRUD operations for books with categories and tags, advanced search and filtering capabilities, user reviews and ratings system, book borrowing and return tracking, notification system, and admin panel APIs. Built with Node.js and Express.js, using MongoDB for data persistence and JWT for secure authentication. Features include pagination, sorting, and efficient query optimization.",
+            "technologies": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "JWT",
+                "REST APIs"
+            ],
+            "github": "https://github.com/amanguptaofficial",
+            "live": "",
+            "image": "https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062975.jpg?semt=ais_incoming&w=740&q=80"
+        },
+        {
+            "title": "Blogging Platform",
+            "description": "A scalable and high-performance backend for a modern blogging platform. Features include user authentication and profile management, rich text blog post creation and editing, comment system with nested replies, like and bookmark functionality, user follow/unfollow system, content categorization and tagging, search functionality, and analytics APIs. Implemented with Node.js and Express.js, using MongoDB for primary data storage and Redis for caching frequently accessed content, resulting in improved response times and better user experience.",
+            "technologies": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Redis",
+                "REST APIs"
+            ],
+            "github": "https://github.com/amanguptaofficial",
+            "live": "",
+            "image": "https://img.freepik.com/premium-photo/blog-text-white-office-desk-notepad-pencil-glasses-cup-coffee-plant-keyboard-bottom_176814-711.jpg"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Master of Computer Application",
+            "institution": "Asian International University, Manipur",
+            "duration": "2022 - 2024",
+            "description": "Relevant coursework: Advanced Data Structures & Algorithms, Database Management Systems (DBMS), Software Engineering & Project Management, Web Technologies, Object-Oriented Programming, Computer Networks, Operating Systems, Software Architecture & Design Patterns, Cloud Computing, Machine Learning Fundamentals"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Node.js Backend Development",
+            "issuer": "HackerRank",
+            "date": "2024"
+        },
+        {
+            "name": "Master Spring Boot, MVC Framework",
+            "issuer": "Udemy",
+            "date": "2024"
+        },
+        {
+            "name": "Full Stack Development",
+            "issuer": "Bytecode IT Solutions, Kanpur",
+            "date": "2023"
+        }
+    ],
+    "contact": {
+        "cta": "Let's work together to build amazing backend solutions!",
+        "availability": "Available for freelance projects and full-time opportunities"
+    },
+    "socialLinks": {
+        "github": "https://github.com/amanguptaofficial",
+        "linkedin": "https://www.linkedin.com/in/aman-gupta-coder/",
+        "email": "amangupta5132@gmail.com"
+    }
+}

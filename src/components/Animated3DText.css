@@ -1,0 +1,62 @@
+.animated-3d-text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--text-color);
+  display: inline-block;
+  perspective: 1200px;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+  transform-style: preserve-3d;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.animated-3d-text .letter {
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: color 0.3s ease;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.08);
+  will-change: transform;
+}
+
+.animated-3d-text .letter:hover {
+  color: var(--primary-color);
+}
+
+.animated-3d-text:hover .letter {
+  transition: color 0.3s ease;
+}
+
+.animated-3d-text:hover .letter:nth-child(odd) {
+  color: var(--primary-color);
+}
+
+.animated-3d-text:hover .letter:nth-child(even) {
+  color: #6366f1;
+}
+
+@media (max-width: 1024px) {
+  .animated-3d-text {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-3d-text {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  
+  .animated-3d-text .letter {
+    text-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.1),
+      0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+}
+

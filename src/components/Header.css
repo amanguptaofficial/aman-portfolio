@@ -1,0 +1,251 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 20px 5%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-color);
+  letter-spacing: -0.5px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.logo a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: -1;
+}
+
+.logo a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), #8b5cf6);
+  transition: width 0.4s ease;
+}
+
+.logo a:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px) scale(1.05);
+  text-shadow: 0 2px 10px rgba(99, 102, 241, 0.3);
+}
+
+.logo a:hover::before {
+  opacity: 1;
+}
+
+.logo a:hover::after {
+  width: 80%;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  background: linear-gradient(135deg, transparent 0%, transparent 100%);
+  overflow: hidden;
+}
+
+.nav a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+  transition: left 0.5s;
+  z-index: -1;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), #8b5cf6);
+  transition: width 0.4s ease;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3),
+              0 4px 10px rgba(99, 102, 241, 0.2);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.nav a:hover::before {
+  left: 100%;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.hire-btn {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: var(--secondary-color);
+  padding: 12px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+}
+
+.hire-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s;
+  z-index: 1;
+}
+
+.hire-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  z-index: 0;
+}
+
+.hire-btn:hover {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  transform: translateY(-4px) scale(1.05) rotateX(5deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4),
+              0 6px 15px rgba(99, 102, 241, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+.hire-btn:hover::before {
+  left: 100%;
+}
+
+.hire-btn:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.hire-btn:active {
+  transform: translateY(-2px) scale(1.02) rotateX(2deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hire-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    gap: 20px;
+  }
+  
+  .nav a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 4%;
+  }
+  
+  .header-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .nav {
+    gap: 15px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .nav a {
+    font-size: 11px;
+  }
+  
+  .hire-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+    order: 2;
+  }
+  
+  .logo {
+    order: 1;
+  }
+}
+
