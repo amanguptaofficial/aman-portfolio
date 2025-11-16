@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+  transition: background 0.3s ease;
+}
+
+.dark-mode .hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
 .hero-container {
@@ -36,6 +41,11 @@
   line-height: 1.8;
   color: #666;
   max-width: 600px;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .hero-description {
+  color: #9ca3af;
 }
 
 .hero-buttons {
@@ -60,6 +70,10 @@
 
 .contact-btn:hover {
   background: #333;
+}
+
+.dark-mode .contact-btn:hover {
+  background: #4b5563;
 }
 
 .resume-btn {
@@ -93,6 +107,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .hero-illustration {
+  background: var(--card-bg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .profile-image-container {

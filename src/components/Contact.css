@@ -3,6 +3,11 @@
   border-radius: 20px;
   margin: 40px auto;
   padding: 60px 5%;
+  transition: background 0.3s ease;
+}
+
+.dark-mode .contact {
+  background: var(--card-bg);
 }
 
 .contact-cta {
@@ -10,6 +15,11 @@
   color: #666;
   margin-bottom: 10px;
   text-align: center;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .contact-cta {
+  color: #9ca3af;
 }
 
 .contact-availability {
@@ -17,6 +27,11 @@
   color: #999;
   margin-bottom: 50px;
   text-align: center;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .contact-availability {
+  color: #6b7280;
 }
 
 .thank-you-message {
@@ -87,6 +102,10 @@
   transition: color 0.3s;
 }
 
+.dark-mode .contact-item a {
+  color: #9ca3af;
+}
+
 .contact-item a:hover {
   color: var(--accent-color);
 }
@@ -127,6 +146,10 @@
 
 .submit-btn:hover:not(:disabled) {
   background: #333;
+}
+
+.dark-mode .submit-btn:hover:not(:disabled) {
+  background: #4b5563;
 }
 
 .submit-btn:disabled {

@@ -17,6 +17,11 @@
   transition: all 0.3s;
 }
 
+.dark-mode .project-card {
+  background: var(--card-bg);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
 .project-card:hover {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
@@ -69,6 +74,11 @@
   line-height: 1.6;
   color: #666;
   margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .project-description {
+  color: #9ca3af;
 }
 
 .project-tech {

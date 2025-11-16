@@ -13,6 +13,15 @@
   --card-bg: #ffffff;
 }
 
+.dark-mode {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --accent-color: #818cf8;
+  --text-color: #e5e7eb;
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

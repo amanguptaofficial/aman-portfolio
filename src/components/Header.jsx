@@ -1,9 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaMoon, FaSun } from 'react-icons/fa'
+import { useTheme } from '../context/ThemeContext'
 import './Header.css'
 
 const Header = ({ data }) => {
+  const { isDarkMode, toggleTheme } = useTheme()
+
   const handleNavClick = (e, hash) => {
     e.preventDefault();
     window.history.pushState(null, '', hash);
@@ -48,13 +51,23 @@ const Header = ({ data }) => {
           <a href="#work" onClick={(e) => handleNavClick(e, '#work')}>MY WORK</a>
         </nav>
         
-        <a
-          href="#contact"
-          className="hire-btn"
-          onClick={(e) => handleNavClick(e, '#contact')}
-        >
-          <span>HIRE ME!</span>
-        </a>
+        <div className="header-actions">
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle dark mode"
+          >
+            {isDarkMode ? <FaSun /> : <FaMoon />}
+          </button>
+          
+          <a
+            href="#contact"
+            className="hire-btn"
+            onClick={(e) => handleNavClick(e, '#contact')}
+          >
+            <span>HIRE ME!</span>
+          </a>
+        </div>
       </div>
     </motion.header>
   )
